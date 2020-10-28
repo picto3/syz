@@ -1,0 +1,110 @@
+\documentclass{jarticle}
+
+\usepackage{amsmath, amssymb}
+\usepackage{bm}
+\usepackage{ascmac}
+\usepackage{here}
+
+\makeatletter
+
+\def\@thesis{オープンキャンパス準備}
+\def\id#1{\def\@id{#1}}
+\def\department#1{\def\@department{#1}}
+
+\def\@maketitle{
+\begin{center}
+{\huge \@thesis \par}
+\vspace{10mm}
+{\LARGE\bf \@title \par}
+\vspace{10mm}
+{\Large \@date\par}
+\vspace{20mm}
+{\Large \@department \par}
+{\Large 学籍番号　\@id \par}
+\vspace{10mm}
+{\large \@author}
+\end{center}
+\par\vskip 1.5em
+}
+
+\makeatother
+
+\title{TeXの練習}
+\date{\today}
+\department{神戸大学 理学部}
+\id{1523085S}
+\author{吉田 真人}
+
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{empty}
+\clearpage
+\addtocounter{page}{-1}
+
+\section{よく使いそう}
+\subsection{箇条書き}
+\noindent
+\textbackslash begin\{itemize\} \\
+  \textbackslash item いち\\
+  \textbackslash item に\\
+  \textbackslash item さん\\
+  \textbackslash end\{itemize\}
+  で次のようになる.
+  \begin{itemize}
+   \item いち
+   \item に
+   \item さん
+  \end{itemize}
+
+  \noindent
+  番号付けはenumrateもしくは、itemizeで\textbackslash item[1.]のようにする.
+  \begin{itemize}
+   \item[1.] いち
+   \item[2.] に
+   \item[3.] さん
+  \end{itemize}
+
+  \subsection{表}
+  \begin{table}[H]
+   \begin{center}
+    \caption{test}
+    \begin{tabular}{|c||c|c|}
+     \hline
+     & 1 & 2 \\ \hline \hline
+     1 & & \\ \hline
+     2 & & \\ \hline
+    \end{tabular}
+   \end{center}
+  \end{table}
+   
+  \subsection{数式}
+   \subsubsection{\$ \$}
+   文章中にそのまま出力. \\
+   $a^n + b^n = c^n$みたいな感じ. \\
+   分数などは$\frac{a}{b}$みたいに小さくなってしまうので
+   \$\textbackslash displaystyle 数式 \$とすると
+   $\displaystyle \frac{a}{b}$のように少しよくなる.
+   
+   \subsubsection{\$\$ \$\$}
+   新しい行で真ん中に出力.
+   $$\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$$
+   \textbackslash begin\{equation\}でもOKだが式番号が入る.
+   \begin{equation}
+    \sum_{i=1}^{n} i = \frac{n(n+1)}{2}
+   \end{equation}
+   
+   \subsubsection{複数行の数式}
+   eqnarrayを使う.
+   \begin{eqnarray*}
+    \sin2x & = & \sin(x + x) \\
+    & = & \sin x \cos x + \cos x \sin x \\
+    & = & 2\sin x \cos x
+   \end{eqnarray*}
+   
+   
+   
+   $\displaystyle \int_{1}^{a} \frac{1}{x} dx$
+\end{document}

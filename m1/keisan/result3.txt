@@ -1,0 +1,30 @@
+user@debian:~/m1/keisan$ ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0  28932  5304 ?        Ss   14:52   0:00 /sbin/init conf
+root         2  0.0  0.0      0     0 ?        S    14:52   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    14:52   0:00 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   14:52   0:00 [kworker/0:0H]
+
+
+
+
+
+
+
+
+user      1731  0.0  0.0  14692  1736 ?        S    15:39   0:00 gnome-pty-helpe
+user      1734  0.0  0.0  21816  4220 pts/0    Ss   15:39   0:00 bash
+user      1739 13.9  3.8 1216220 312456 ?      Sl   15:39   3:37 /usr/lib/firefo
+root      1863  0.0  0.0      0     0 ?        S    15:41   0:00 [kworker/2:2]
+root      1905  0.0  0.0      0     0 ?        S    15:51   0:00 [kworker/3:0]
+root      1971  0.0  0.0      0     0 ?        S    15:57   0:00 [kworker/3:2]
+root      1992  0.0  0.1 238068  8596 ?        Ssl  15:59   0:00 /usr/lib/upower
+root      2039  0.0  0.0      0     0 ?        S    16:03   0:00 [kworker/3:1]
+user      2061  0.0  0.0  18584  2428 pts/0    R+   16:05   0:00 ps aux
+user@debian:~/m1/keisan$ ps aux | grep firefox
+user      1739 13.8  3.8 1216156 312696 ?      Sl   15:39   3:37 /usr/lib/firefox-esr/firefox-esr
+user      2063  0.0  0.0  12228  2204 pts/0    S+   16:05   0:00 grep firefox
+user@debian:~/m1/keisan$ ps aux | grep firefox > testlog.txt
+user@debian:~/m1/keisan$ cat testlog.txt 
+user      1739 13.7  3.8 1216156 312696 ?      Sl   15:39   3:37 /usr/lib/firefox-esr/firefox-esr
+user      2065  0.0  0.0  12228  2152 pts/0    S+   16:05   0:00 grep firefox

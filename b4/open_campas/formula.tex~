@@ -1,0 +1,14 @@
+\documentclass{jarticle}
+
+\usepackage{amsmath, amssymb}
+\usepackage{bm}
+\usepackage{ascmac}
+
+
+\begin{ducument}
+ 不定積分公式
+ $$\int \frac{1}{\sin x} dx =
+ \frac{1}{2} \log \left( \frac{1-\cos x}{1+\cos x} \right)$$
+ 
+\end{ducument}
+  

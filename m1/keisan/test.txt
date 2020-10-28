@@ -1,0 +1,3 @@
+od test
+
+nkf test

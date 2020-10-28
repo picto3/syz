@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int main(void)
+{
+  FILE *fp;
+  char fname[] = "text3-out.txt";
+  int asc[128] = {0};
+  int chr;
+  int i;
+  int max = 0;
+  int index = 0;
+  int key = ' ';
+  
+  fp = fopen(fname, "r");
+  if(fp == NULL) {
+    printf("%s file not open\n",fname);
+    return 0;
+  }
+
+  printf("encrypt\n");
+  while((chr = fgetc(fp)) != EOF) {
+    asc[chr]++;
+    printf("%c",chr);
+  }
+  fclose(fp);
+  
+  for(i = 0; i < 128; i++) {
+    if(max < asc[i]) {
+      max = asc[i];
+      index = i;
+    }
+  }
+  
+  key = (128+key - index)%128;
+  fp = fopen(fname, "r");
+  if(fp == NULL) {
+    printf("%s file not open\n",fname);
+  }
+  
+  printf("\n\n");
+  
+  printf("decript\n");
+  while((chr = fgetc(fp)) != EOF) {
+    asc[chr]++;
+    printf("%c",(chr+key)%128);
+  }
+  fclose(fp);
+  
+  printf("\n");
+  
+  return 0;
+}

@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct monom {
+  int c;   // 係数
+  int n;   // 変数の数
+  int *e;  // 指数
+};
+
+struct monom *new_monom(int n) {
+  struct monom *m;
+  int i;
+  m = (struct monom *)malloc(sizeof(struct monom));
+  m -> c = 1; 
+  m -> n = n;
+  m -> e = (int *)malloc(sizeof(int)*n);
+  for (i=0; i<n; i++) (m->e)[i] = 0;
+  return(m);
+}
+
+void print_monom(struct monom *f) {
+  int i,n;
+  n = f->n;
+  printf("%d[",f->c);
+  for (i=0; i<n; i++) {
+     if (i != n-1) printf("%d,",(f->e)[i]);
+     else printf("%d]",(f->e)[i]);
+  }
+}
+
+
+int main(void)
+{
+  struct monom *f;
+
+  f = new_monom(3);
+  print_monom(f);
+  printf("\n");
+  
+  return 0;
+}

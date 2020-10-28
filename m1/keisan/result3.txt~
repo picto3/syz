@@ -1,0 +1,155 @@
+user@debian:~/m1/keisan$ ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0  28932  5304 ?        Ss   14:52   0:00 /sbin/init conf
+root         2  0.0  0.0      0     0 ?        S    14:52   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    14:52   0:00 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   14:52   0:00 [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    14:52   0:01 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    14:52   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    14:52   0:00 [migration/0]
+root        10  0.0  0.0      0     0 ?        S    14:52   0:00 [watchdog/0]
+root        11  0.0  0.0      0     0 ?        S    14:52   0:00 [watchdog/1]
+root        12  0.0  0.0      0     0 ?        S    14:52   0:00 [migration/1]
+root        13  0.0  0.0      0     0 ?        S    14:52   0:00 [ksoftirqd/1]
+root        15  0.0  0.0      0     0 ?        S<   14:52   0:00 [kworker/1:0H]
+root        16  0.0  0.0      0     0 ?        S    14:52   0:00 [watchdog/2]
+root        17  0.0  0.0      0     0 ?        S    14:52   0:00 [migration/2]
+root        18  0.0  0.0      0     0 ?        S    14:52   0:00 [ksoftirqd/2]
+root        20  0.0  0.0      0     0 ?        S<   14:52   0:00 [kworker/2:0H]
+root        21  0.0  0.0      0     0 ?        S    14:52   0:00 [watchdog/3]
+root        22  0.0  0.0      0     0 ?        S    14:52   0:00 [migration/3]
+root        23  0.0  0.0      0     0 ?        S    14:52   0:00 [ksoftirqd/3]
+root        25  0.0  0.0      0     0 ?        S<   14:52   0:00 [kworker/3:0H]
+root        26  0.0  0.0      0     0 ?        S<   14:52   0:00 [khelper]
+root        27  0.0  0.0      0     0 ?        S    14:52   0:00 [kdevtmpfs]
+root        28  0.0  0.0      0     0 ?        S<   14:52   0:00 [netns]
+root        29  0.0  0.0      0     0 ?        S    14:52   0:00 [khungtaskd]
+root        30  0.0  0.0      0     0 ?        S<   14:52   0:00 [writeback]
+root        31  0.0  0.0      0     0 ?        SN   14:52   0:00 [ksmd]
+root        32  0.0  0.0      0     0 ?        SN   14:52   0:00 [khugepaged]
+root        33  0.0  0.0      0     0 ?        S<   14:52   0:00 [crypto]
+root        34  0.0  0.0      0     0 ?        S<   14:52   0:00 [kintegrityd]
+root        35  0.0  0.0      0     0 ?        S<   14:52   0:00 [bioset]
+root        36  0.0  0.0      0     0 ?        S<   14:52   0:00 [kblockd]
+root        37  0.0  0.0      0     0 ?        S    14:52   0:01 [kworker/1:1]
+root        38  0.0  0.0      0     0 ?        S    14:52   0:01 [kworker/0:1]
+root        39  0.0  0.0      0     0 ?        S    14:52   0:01 [kworker/2:1]
+root        41  0.0  0.0      0     0 ?        S    14:52   0:00 [kswapd0]
+root        42  0.0  0.0      0     0 ?        S<   14:52   0:00 [vmstat]
+root        43  0.0  0.0      0     0 ?        S    14:52   0:00 [fsnotify_mark]
+root        49  0.0  0.0      0     0 ?        S<   14:52   0:00 [kthrotld]
+root        50  0.0  0.0      0     0 ?        S<   14:52   0:00 [ipv6_addrconf]
+root        51  0.0  0.0      0     0 ?        S    14:52   0:00 [kworker/0:2]
+root        52  0.0  0.0      0     0 ?        S<   14:52   0:00 [deferwq]
+root        84  0.0  0.0      0     0 ?        S<   14:52   0:00 [acpi_thermal_p
+root        89  0.0  0.0      0     0 ?        S<   14:52   0:00 [ata_sff]
+root        90  0.0  0.0      0     0 ?        S<   14:52   0:00 [kpsmoused]
+root        91  0.0  0.0      0     0 ?        S    14:52   0:00 [khubd]
+root        94  0.0  0.0      0     0 ?        S    14:52   0:00 [scsi_eh_0]
+root        95  0.0  0.0      0     0 ?        S<   14:52   0:00 [scsi_tmf_0]
+root        96  0.0  0.0      0     0 ?        S    14:52   0:00 [scsi_eh_1]
+root        97  0.0  0.0      0     0 ?        S<   14:52   0:00 [scsi_tmf_1]
+root        98  0.0  0.0      0     0 ?        S    14:52   0:00 [scsi_eh_2]
+root        99  0.0  0.0      0     0 ?        S<   14:52   0:00 [scsi_tmf_2]
+root       100  0.0  0.0      0     0 ?        S    14:52   0:00 [scsi_eh_3]
+root       101  0.0  0.0      0     0 ?        S<   14:52   0:00 [scsi_tmf_3]
+root       102  0.0  0.0      0     0 ?        S    14:52   0:00 [kworker/u8:2]
+root       103  0.0  0.0      0     0 ?        S    14:52   0:00 [kworker/u8:3]
+root       114  0.0  0.0      0     0 ?        S    14:52   0:00 [kworker/1:2]
+root       116  0.0  0.0      0     0 ?        S<   14:52   0:00 [kworker/0:1H]
+root       117  0.0  0.0      0     0 ?        S    14:52   0:00 [scsi_eh_4]
+root       118  0.0  0.0      0     0 ?        S<   14:52   0:00 [scsi_tmf_4]
+root       119  0.0  0.0      0     0 ?        S    14:52   0:00 [usb-storage]
+root       120  0.0  0.0      0     0 ?        S<   14:52   0:00 [kworker/1:1H]
+root       121  0.0  0.0      0     0 ?        S<   14:52   0:00 [kworker/2:1H]
+root       311  0.0  0.0      0     0 ?        S<   14:52   0:00 [kworker/3:1H]
+root       350  0.0  0.0      0     0 ?        S<   14:52   0:00 [loop0]
+root       801  0.0  0.0      0     0 ?        S    14:52   0:00 [jbd2/sdb2-8]
+root       802  0.0  0.0      0     0 ?        S<   14:52   0:00 [ext4-rsv-conve
+root       925  0.0  0.0      0     0 ?        S    14:53   0:00 [kauditd]
+root       927  0.0  0.0  33068  4036 ?        Ss   14:53   0:00 /lib/systemd/sy
+root       990  0.0  0.0  41524  3852 ?        Ss   14:53   0:00 /lib/systemd/sy
+root      1085  0.0  0.1 430484 13392 ?        Ssl  14:53   0:00 /usr/sbin/Netwo
+root      1087  0.0  0.1 336284  8144 ?        Ssl  14:53   0:00 /usr/sbin/Modem
+apt-cac+  1090  0.0  0.0  46808  6744 ?        Ss   14:53   0:00 /usr/sbin/apt-c
+root      1091  0.0  0.0  26988  2836 ?        Ss   14:53   0:00 /usr/sbin/cron 
+root      1093  0.0  0.0  28372  2896 ?        Ss   14:53   0:00 /lib/systemd/sy
+avahi     1103  0.0  0.0  32876  3712 ?        Ss   14:53   0:03 avahi-daemon: r
+message+  1104  0.0  0.0  42848  3976 ?        Ss   14:53   0:01 /usr/bin/dbus-d
+root      1129  0.0  0.0      0     0 ?        S<   14:53   0:00 [hd-audio0]
+root      1182  0.0  0.0 258672  3396 ?        Ssl  14:53   0:00 /usr/sbin/rsysl
+root      1183  0.0  0.1  86896  8172 ?        Ss   14:53   0:00 /usr/sbin/cupsd
+root      1187  0.0  0.0  13900  2040 tty1     Ss+  14:53   0:00 /sbin/agetty --
+root      1191  0.0  0.0 278452  5856 ?        Ssl  14:53   0:00 /usr/sbin/light
+root      1192  0.0  0.0  19276  2068 ?        Ss   14:53   0:00 /usr/sbin/irqba
+root      1193  0.0  0.0      0     0 ?        S<   14:53   0:00 [kvm-irqfd-clea
+avahi     1194  0.0  0.0  32100   252 ?        S    14:53   0:00 avahi-daemon: c
+root      1195  0.0  0.0  71836  6244 ?        Ss   14:53   0:02 /usr/sbin/cups-
+root      1205  0.0  0.0  75588  4564 ?        Ss   14:53   0:00 /usr/sbin/apach
+www-data  1207  0.0  0.0 364752  3932 ?        Sl   14:53   0:01 /usr/sbin/apach
+www-data  1208  0.0  0.0 364752  3932 ?        Sl   14:53   0:01 /usr/sbin/apach
+root      1269  0.0  0.0 279956  7256 ?        Ssl  14:53   0:00 /usr/lib/policy
+colord    1273  0.0  0.1 307604 13304 ?        Ssl  14:53   0:00 /usr/lib/colord
+root      1279  0.0  0.0      0     0 ?        S<   14:53   0:00 [cfg80211]
+root      1284  5.0  1.1 392992 89732 tty7     Ssl+ 14:53   3:39 /usr/bin/X :0 -
+root      1301  0.0  0.1 162724 14268 ?        S    14:53   0:01 /usr/bin/python
+root      1308  0.0  0.2  87464 16492 ?        S    14:53   0:01 /usr/bin/python
+root      1321  0.0  0.0 234236  6360 ?        Sl   14:53   0:00 lightdm --sessi
+user      1326  0.0  0.0  35792  3936 ?        Ss   14:53   0:00 /lib/systemd/sy
+user      1327  0.0  0.0  52304  2156 ?        S    14:53   0:00 (sd-pam)       
+user      1329  0.0  0.1 361760 12952 ?        Ssl  14:53   0:00 /usr/bin/lxsess
+root      1342  0.0  0.1  25404 10196 ?        S    14:53   0:00 /sbin/dhclient 
+user      1428  0.0  0.0  10700   340 ?        Ss   14:53   0:00 /usr/bin/ssh-ag
+user      1431  0.0  0.0  24372  1944 ?        S    14:53   0:00 /usr/bin/dbus-l
+user      1432  0.0  0.0  42388  2692 ?        Ss   14:53   0:00 /usr/bin/dbus-d
+user      1454  0.0  0.1  79148 11516 ?        S    14:53   0:01 /usr/bin/uim-xi
+user      1455  0.0  0.3 253200 26200 ?        Sl   14:53   0:00 uim-toolbar
+user      1469  0.0  0.0  14700  1680 ?        S    14:53   0:00 /usr/lib/x86_64
+user      1472  0.0  0.0 209504  6644 ?        Sl   14:53   0:00 /usr/lib/gvfs/g
+user      1476  0.0  0.0 355164  6356 ?        Sl   14:53   0:00 /usr/lib/gvfs/g
+user      1478  0.0  0.0 337564  5288 ?        Sl   14:53   0:00 /usr/lib/at-spi
+user      1482  0.0  0.0  42124  3492 ?        S    14:53   0:00 /usr/bin/dbus-d
+user      1486  0.0  0.0 125220  4932 ?        Sl   14:53   0:00 /usr/lib/at-spi
+user      1498  0.0  0.2 154816 17680 ?        S    14:53   0:01 openbox --confi
+user      1502  0.0  0.1 204088 10328 ?        Sl   14:53   0:00 lxpolkit
+user      1503  0.0  0.4 806228 39128 ?        Sl   14:53   0:03 lxpanel --profi
+user      1505  0.0  0.6 647252 54220 ?        Sl   14:53   0:00 pcmanfm --deskt
+user      1506  0.0  0.0  60040  4872 ?        S    14:53   0:00 xscreensaver -n
+user      1511  0.0  0.4 188380 33000 ?        S    14:53   0:00 /usr/bin/python
+user      1514  0.0  0.0  10700   336 ?        Ss   14:53   0:00 /usr/bin/ssh-ag
+user      1516  0.0  0.2 315992 18740 ?        Sl   14:53   0:00 /usr/lib/notifi
+user      1522  0.0  0.3 230276 24492 ?        Sl   14:53   0:00 /usr/bin/python
+user      1527  0.0  0.4 516444 38956 ?        Sl   14:53   0:00 nm-applet
+user      1529  0.2  0.2 221488 20808 ?        Sl   14:53   0:11 clipit
+user      1532  0.0  0.0  51704  5204 ?        S    14:53   0:00 /usr/lib/x86_64
+user      1539  0.0  0.1 303252  8648 ?        Sl   14:53   0:00 /usr/lib/gvfs/g
+root      1550  0.0  0.0 370044  7360 ?        Ssl  14:53   0:00 /usr/lib/udisks
+user      1552  0.0  0.1 365060 10312 ?        S<l  14:53   0:00 /usr/bin/pulsea
+rtkit     1553  0.0  0.0 168780  2496 ?        SNsl 14:53   0:00 /usr/lib/rtkit/
+user      1565  0.0  0.0 206196  5992 ?        Sl   14:53   0:00 /usr/lib/gvfs/g
+user      1569  0.0  0.0 215276  6476 ?        Sl   14:53   0:00 /usr/lib/gvfs/g
+user      1575  0.0  0.0 202236  6048 ?        Sl   14:53   0:00 /usr/lib/gvfs/g
+user      1579  0.0  0.0 299776  7696 ?        Sl   14:53   0:00 /usr/lib/gvfs/g
+user      1593  0.0  0.0 205064  5600 ?        Ssl  14:53   0:00 /usr/lib/menu-c
+user      1599  0.0  0.0   4336   108 ?        S    14:53   0:00 /bin/sh /usr/bi
+user      1600  0.0  0.0  18140  2332 ?        S    14:53   0:00 /usr/bin/xprop 
+user      1610  0.0  0.0 363712  7384 ?        Sl   14:53   0:00 /usr/lib/gvfs/g
+user      1657  0.0  0.2 220456 16568 ?        Sl   15:34   0:00 /usr/lib/mozc/m
+user      1682  0.0  0.1 134928 13668 ?        S    15:34   0:00 /usr/lib/x86_64
+user      1727  0.2  0.5 446276 41592 ?        Sl   15:39   0:03 /usr/lib/gnome-
+user      1731  0.0  0.0  14692  1736 ?        S    15:39   0:00 gnome-pty-helpe
+user      1734  0.0  0.0  21816  4220 pts/0    Ss   15:39   0:00 bash
+user      1739 13.9  3.8 1216220 312456 ?      Sl   15:39   3:37 /usr/lib/firefo
+root      1863  0.0  0.0      0     0 ?        S    15:41   0:00 [kworker/2:2]
+root      1905  0.0  0.0      0     0 ?        S    15:51   0:00 [kworker/3:0]
+root      1971  0.0  0.0      0     0 ?        S    15:57   0:00 [kworker/3:2]
+root      1992  0.0  0.1 238068  8596 ?        Ssl  15:59   0:00 /usr/lib/upower
+root      2039  0.0  0.0      0     0 ?        S    16:03   0:00 [kworker/3:1]
+user      2061  0.0  0.0  18584  2428 pts/0    R+   16:05   0:00 ps aux
+user@debian:~/m1/keisan$ ps aux | grep firefox
+user      1739 13.8  3.8 1216156 312696 ?      Sl   15:39   3:37 /usr/lib/firefox-esr/firefox-esr
+user      2063  0.0  0.0  12228  2204 pts/0    S+   16:05   0:00 grep firefox
+user@debian:~/m1/keisan$ ps aux | grep firefox > testlog.txt
+user@debian:~/m1/keisan$ cat testlog.txt 
+user      1739 13.7  3.8 1216156 312696 ?      Sl   15:39   3:37 /usr/lib/firefox-esr/firefox-esr
+user      2065  0.0  0.0  12228  2152 pts/0    S+   16:05   0:00 grep firefox
